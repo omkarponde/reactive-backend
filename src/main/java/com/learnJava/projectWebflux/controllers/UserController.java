@@ -1,5 +1,6 @@
 package com.learnJava.projectWebflux.controllers;
 
+import com.learnJava.projectWebflux.dtos.AuthResponseDTO;
 import com.learnJava.projectWebflux.dtos.LoginRequestDTO;
 import com.learnJava.projectWebflux.dtos.SignupRequestDTO;
 import com.learnJava.projectWebflux.dtos.UserResponseDTO;
@@ -34,7 +35,7 @@ public class UserController {
     }
 
 //    @GetMapping("/login")
-//    public Mono<ResponseEntity<UserResponseDTO>> login(@Valid @RequestBody LoginRequestDTO loginRequest) {
+//    public Mono<ResponseEntity<AuthResponseDTO>> login(@Valid @RequestBody LoginRequestDTO loginRequest) {
 //
 //    }
 }

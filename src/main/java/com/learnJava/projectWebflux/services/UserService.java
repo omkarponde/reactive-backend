@@ -1,5 +1,6 @@
 package com.learnJava.projectWebflux.services;
 
+import com.learnJava.projectWebflux.dtos.AuthResponseDTO;
 import com.learnJava.projectWebflux.dtos.SignupRequestDTO;
 import com.learnJava.projectWebflux.dtos.UserResponseDTO;
 import com.learnJava.projectWebflux.models.User;
@@ -56,6 +57,8 @@ public class UserService {
                 })
                 .map(this::mapToUserResponseDTO);
     }
+
+//    public Mono<AuthResponseDTO> getAccessToken()
 
     // Mapper method to convert User to UserResponseDTO
     private UserResponseDTO mapToUserResponseDTO(User user) {
